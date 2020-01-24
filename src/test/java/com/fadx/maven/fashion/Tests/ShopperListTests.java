@@ -1,5 +1,9 @@
 package com.fadx.maven.fashion.Tests;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +32,7 @@ public class ShopperListTests extends BaseClass {
 		genric.launchApplication();
 	}
 	@Test
-	public void AddShoppers() {
+	public void AddShoppers() throws AWTException {
 		test = extent.startTest(this.getClass().getName()+"."+Thread.currentThread().getStackTrace()[1].getMethodName());
 		genric.waitForLoading(); 
 		genric.element(LoginfadxPageObjects.Store_Id).sendKeys(("indra_nagar"));
@@ -44,16 +48,22 @@ public class ShopperListTests extends BaseClass {
 		genric.element(ShopperListPageObjects.Add_shopper_click).click();
 		genric.waitForLoading(); 
 		genric.element(ShopperListPageObjects.click_guest_added).click();
+		genric.waitForLoading(); 
+
 		genric.element(ShopperListPageObjects.click_continue).click();
 		genric.waitForLoading(); 
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.PAGE_DOWN).build().perform();
+		genric.element(ShopperListPageObjects.scroll).isSelected();
+		genric.waitForLoading(); 
 
-        //open SoftwareTestingMaterial.com	genric.waitForLoading(); 
 
-		genric.element(ShopperListPageObjects.age_group).click();
-		genric.element(ShopperListPageObjects.profession_select).click();
-		genric.element(ShopperListPageObjects.click_continue).click();
+
+		genric.element(ShopperListPageObjects.age_group).isSelected();
+		genric.waitForLoading(); 
+
+		genric.element(ShopperListPageObjects.profession_select).isSelected();
+		genric.waitForLoading(); 
+
+		genric.element(ShopperListPageObjects.click_continue_1).click();
 		genric.element(ShopperListPageObjects.shirt_size).click();
 		genric.element(ShopperListPageObjects.click_continue).click();
 		genric.element(ShopperListPageObjects.select_face_type).click();

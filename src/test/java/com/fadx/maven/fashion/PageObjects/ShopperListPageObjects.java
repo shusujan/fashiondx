@@ -5,7 +5,10 @@ public class ShopperListPageObjects {
 	public static final String Add_shopper_click="xpath:./html/body/app-root/ion-app/ion-modal/div/app-shopper-add/ion-content/ion-grid/ion-row/ion-col/form/ion-grid/ion-row/ion-col[3]/div/ion-buttons/ion-button\r\n" + "";
 	public static final String click_guest_added="xpath:./html/body/app-root/ion-app/ion-router-outlet/app-dashboard/ion-router-outlet/app-home/ion-content/div/ion-grid/ion-row/ion-col\r\n" + 
 			"";
+	
+	public static final String scroll="xpath:.//*[@id=\"dashboard-menu\"]/app-style-profile/ion-content//main";
 	public static final String click_continue="xpath:./html/body/app-root/ion-app/ion-router-outlet/app-dashboard/ion-router-outlet/app-guest-shopper-proceed/ion-footer/ion-toolbar/ion-buttons/ion-grid/ion-row/ion-col/ion-button";
+	public static final String click_continue_1="xpath:./html/body/app-root/ion-app/ion-router-outlet/app-dashboard/ion-router-outlet/app-style-profile/ion-footer/ion-toolbar/ion-buttons/ion-grid/ion-row/ion-col[2]/ion-button";
 	public static final String age_group="xpath:./html/body/app-root/ion-app/ion-router-outlet/app-dashboard/ion-router-outlet/app-style-profile/ion-content/div/ion-grid/ion-row/ion-col/ion-slides/div/ion-slide[1]/ion-grid/ion-row[2]/ion-col/app-dynamic-form/form/div/app-radiobutton[1]/div/ion-radio-group/ion-grid/ion-row/ion-col[1]/div/ion-radio\r\n" + 
 			"";
 	public static final String profession_select="xpath:./html/body/app-root/ion-app/ion-router-outlet/app-dashboard/ion-router-outlet/app-style-profile/ion-content/div/ion-grid/ion-row/ion-col/ion-slides/div/ion-slide[1]/ion-grid/ion-row[2]/ion-col/app-dynamic-form/form/div/app-radiobutton[2]/div/ion-radio-group/ion-grid/ion-row/ion-col[1]/div/ion-radio\r\n" + 
